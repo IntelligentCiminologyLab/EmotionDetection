@@ -1,0 +1,1 @@
+This folder contains the basic feature extraction of face for emotion detection. Feature extraction requires a dll named as "ExportedLib". 
