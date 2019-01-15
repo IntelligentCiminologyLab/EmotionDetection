@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<constants>
+   <constant name="emotionMethod1Arff" type="System.String" description="weka training file to train distance based methodology" module="EmotionRecognition" methodology="Distance based emotion detection" addedby="Gulraiz">
+      <value framework="default">MLPDistanceBased.arff</value>
+   </constant>
+   <constant name="emotionMethod1Model" type="System.String" description="model of distance based methodology" module="EmotionRecognition" methodology="Distance based emotion detection" addedby="Gulraiz">
+      <value framework="default">MLPDistanceBased</value>
+   </constant>
+   <constant name="emotionMethod2Arff" type="System.String" description="weka training file to train distance and wrinkles based methodology" module="EmotionRecognition" methodology="Distance and wrinkles based emotion detection" addedby="Gulraiz">
+      <value framework="default">MLPDistanceAndWrinkleBased.arff</value>
+   </constant>
+   <constant name="emotionMethod2Model" type="System.String" description="model of distance and wrinkles based methodology" module="EmotionRecognition" methodology="Distance and wrinkles based emotion detection" addedby="Gulraiz">
+      <value framework="default">MLPDistanceAndWrinkleBased</value>
+   </constant>
+   <constant name="emotionMethod3Arff" type="System.String" description="weka training file to train reduced dimessions based methodology" module="EmotionRecognition" methodology="reduce dimenssions based emotion detection" addedby="Gulraiz">
+      <value framework="default">MLPReducedDimentions.arff</value>
+   </constant>
+   <constant name="emotionMethod3Model" type="System.String" description="model of reduced dimessions based methodology" module="EmotionRecognition" methodology="reduce dimenssions based emotion detection" addedby="Gulraiz">
+      <value framework="default">MLPReducedDimentions</value>
+   </constant>
+   <constant name="emotionMethod4Arff" type="System.String" description="model of reduced dimessions and distance based methodology" module="EmotionRecognition" methodology="reduce dimenssions based and distance emotion detection" addedby="Gulraiz">
+      <value framework="default">MLPOF.arff</value>
+   </constant>
+   <constant name="emotionMethod4Model" type="System.String" description="Model of fourth methodology" module="EmotionRecognition" methodology="reduce dimenssions based and distance emotion detection" addedby="Gulraiz">
+      <value framework="default">MLPOF</value>
+   </constant>
+   <constant name="emotionHybridArff" type="System.String" description="Weka training file of hybrid methodology" module="EmotionRecognition" methodology="reduce dimenssions based and distance emotion detection" addedby="Gulraiz">
+      <value framework="default">baggingHybrid.arff</value>
+   </constant>
+   <constant name="libsPath" type="System.String" description="Library path to get models" module="EmotionRecognition" methodology="Shared" addedby="Gulraiz">
+      <value framework="default">..\..\..\..\libs\</value>
+   </constant>
+   <constant name="dimentionReductonDllImportPath" type="System.String" description="Dll path to reduce features" module="EmotionRecognition" methodology="Reduced dimensions features" addedby="Gulraiz">
+      <value framework="default">C:\Users\Gulraiz\Documents\Visual Studio 2015\Projects\Isomap\x64\Debug\Isomap.dll</value>
+   </constant>
+   <constant name="emotionHybridModel" type="System.String" description="Model for bagging" module="EmotionRecognition" methodology="bagging" addedby="Gulraiz">
+      <value framework="default">baggingHybridModel</value>
+   </constant>
+   <constant name="fusionofFeaturesArff" type="System.String" description="Fusion of features for action detection" module="ActionRecognition" methodology="Fusion based methodology" addedby="Gulraiz">
+      <value framework="default">fusionofFeatures.arff</value>
+   </constant>
+   <constant name="fusionofFeaturesModel1" type="System.String" description="Fusion of features model for action detection" module="ActionRecognition" methodology="Fusion based methodology" addedby="Gulraiz">
+      <value framework="default">..\..\..\..\libs\models\ADR_Models\SMOnintyninepointseven.model</value>
+   </constant>
+   <constant name="fusionofFeaturesModel2" type="System.String" description="Fusion of features model for action detection" module="ActionRecognition" methodology="Fusion based methodology" addedby="Gulraiz">
+      <value framework="default">fusionofFeatures2</value>
+   </constant>
+   <constant name="fusionofFeaturesModel3" type="System.String" description="Fusion of features model for action detection" module="ActionRecognition" methodology="Fusion based methodology" addedby="Gulraiz">
+      <value framework="default">fusionofFeatures3</value>
+   </constant>
+   <constant name="hybridFeaturesArff" type="System.String" description="Fusion of features filefor action detection" module="ActionRecognition" methodology="Fusion based methodology" addedby="Gulraiz">
+      <value framework="default">hybridFeaturesArff</value>
+   </constant>
+   <constant name="backgroundPath" type="System.String" description="Background for silhutte detection" module="ActionRecognition" methodology="Fusion based methodology" addedby="Gulraiz">
+      <value framework="default">..\..\..\..\libs\models\BackgroundModels\backgrounds\Background.jpg</value>
+   </constant>
+   <constant name="emotionTrainingMessage" type="System.String" description="" module="EmotionRecognition" methodology="" addedby="Gulraiz">
+      <value framework="default">Training Sytstem to detect emotion</value>
+   </constant>
+   <constant name="emotionDetectionMessage" type="System.String" description="" module="EmotionRecognition" methodology="" addedby="Gulraiz">
+      <value framework="default">Emotion detection function that return list of captured emotions and their percentage</value>
+   </constant>
+   <constant name="emotionDataConnectionString" type="System.String" description="Connection string to connect with database" module="EmotionRecognition" methodology="All methodologies" addedby="Gulraiz">
+      <value framework="default">Data Source=DESKTOP-2B6C80T; Initial Catalog=emotiondb;User id=sa;Password=**********;</value>
+   </constant>
+   <constant name="ageCascadePath" type="System.String" description="Path to cascades used by GW and W methodology" module="AgeDetection" methodology="Bio Inspired" addedby="Asad">
+      <value framework="default">ADcascades\</value>
+   </constant>
+   <constant name="BioInspiredDllImportPath" type="System.String" description="BioInspired dll" module="AgeDetection" methodology="Bio Inspired" addedby="Asad">
+      <value framework="default">ageBio.dll</value>
+   </constant>
+   <constant name="ageBioResiseWidth" type="System.Int32" description="Resize width input facial image to Bio Inspired" module="AgeDetection" methodology="Bio Inspired" addedby="Asad">
+      <value framework="default">60</value>
+   </constant>
+   <constant name="ageBioResiseHeight" type="System.Int32" description="Resize height input facial image to Bio Inspired" module="AgeDetection" methodology="Bio Inspired" addedby="Asad">
+      <value framework="default">60</value>
+   </constant>
+   <constant name="ageOutputResiseWidth" type="System.Int32" description="Resize width for ouput image" module="AgeDetection" methodology="All Methodologies" addedby="Asad">
+      <value framework="default">240</value>
+   </constant>
+   <constant name="ageOutputResiseHeight" type="System.Int32" description="Resize width for ouput image" module="AgeDetection" methodology="All Methodologies" addedby="Asad">
+      <value framework="default">320</value>
+   </constant>
+   <constant name="ageResiseWidth" type="System.Int32" description="Resize image Width for GW or W" module="AgeDetection" methodology="Geometric and Wrinkle and only wrinkle" addedby="Asad">
+      <value framework="default">800</value>
+   </constant>
+   <constant name="ageResiseHeight" type="System.String" description="Resize image Height for GW or W" module="AgeDetection" methodology="Geometric and Wrinkle and only wrinkle" addedby="Asad">
+      <value framework="default">800</value>
+   </constant>
+   <constant name="adgwmlpemgumodel" type="System.String" description="EMGU MLP model for GW" module="AgeDetection" methodology="Geometric and Wrinkle" addedby="Asad">
+      <value framework="default">ageMLPEMGUModel.xml</value>
+   </constant>
+   <constant name="adbiosvmemgumodel" type="System.String" description="EMGU SVM model for Bio inspired" module="AgeDetection" methodology="Bio Inspired" addedby="Asad">
+      <value framework="default">..\..\..\..\libs\models\ageSVMBioEmgu.xml</value>
+   </constant>
+   <constant name="adwmlpmodel" type="System.String" description="Wrikle based Weka ANN model" module="AgeDetection" methodology="Wrinkle" addedby="Asad">
+      <value framework="default">agemodelsMLP.Model</value>
+   </constant>
+   <constant name="fullbodyCascade" type="System.String" description="Full human body cascade" module="ActionRecognition" methodology="MoSIFT" addedby="Asad">
+      <value framework="default">..\..\..\..\libs\cascades\haarcascade_fullbody.xml</value>
+   </constant>
+   <constant name="upperbodyCascade" type="System.String" description="Upper body cascade" module="ActionRecognition" methodology="MoSIFT" addedby="Asad">
+      <value framework="default">..\..\..\..\libs\cascades\haarcascade_upperbody.xml</value>
+   </constant>
+   <constant name="lowerbodyCascade" type="System.String" description="Lower body cascade" module="ActionRecognition" methodology="MoSIFT" addedby="Asad">
+      <value framework="default">..\..\..\..\libs\cascades\haarcascade_lowerbody.xml</value>
+   </constant>
+   <constant name="numClustersSOF" type="System.Int32" description="Number of clusters" module="ActionRecognition" methodology="SOF" addedby="Asad">
+      <value framework="default">10</value>
+   </constant>
+   <constant name="savebySVMECOH" type="System.String" description="ECOH based scene detection" module="SceneRecognition" methodology="ECOH descriptors based approach" addedby="Saira">
+      <value framework="default">..\\..\\..\\..\\libs\\models\\SR_Models\\SVMModelECOH.xml</value>
+   </constant>
+   <constant name="savebySVMdct" type="System.String" description="DCT based scene detection" module="SceneRecognition" methodology="DCT based approach" addedby="Saira">
+      <value framework="default">..\\..\\..\\..\\libs\\models\\SR_Models\\SRSVMModelDCT.xml</value>
+   </constant>
+   <constant name="savebySVMCNN" type="System.String" description="xml file name for SVM trained" module="SceneRecognition" methodology="CNN Feature Extraction with SVM" addedby="Saira">
+      <value framework="default">..\\..\\..\\..\\libs\\models\\SR_Models\\SceneRecognitionCNNSVMModel.xml</value>
+   </constant>
+   <constant name="noOfFeaturesDCT" type="System.Int32" description="DCT based scene detection" module="SceneRecognition" methodology="DCT based approach" addedby="Saira">
+      <value framework="default">912</value>
+   </constant>
+   <constant name="noOfFeaturesECOH" type="System.Int32" description="ECOH based scene detection" module="SceneRecognition" methodology="ECOH descriptors based approach" addedby="Saira">
+      <value framework="default">80</value>
+   </constant>
+   <constant name="SceneRecognitiondiPOSSCID" type="System.String" description="Training dataset path" module="SceneRecognition" methodology="ECOH descriptors based approach" addedby="Saira">
+      <value framework="default">D:\Documents\Visual Studio 2015\SceneDatasetTraining\SCID2_IndoorTraining\training</value>
+   </constant>
+   <constant name="SceneRecognitiondiNEGSCID" type="System.String" description="Training dataset path" module="SceneRecognition" methodology="ECOH descriptors based approach" addedby="Saira">
+      <value framework="default">D:\Documents\Visual Studio 2015\SceneDatasetTraining\SCID2_OutdoorTraining\training</value>
+   </constant>
+   <constant name="actionTemplatePath" type="System.String" description="Running action template ModelPath" module="ActionRecognition" methodology="Template Matching" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\RunningActionTemplate.bin</value>
+   </constant>
+   <constant name="joggActionTemplatePath" type="System.String" description="joggActionTemplate ModelPath" module="ActionRecognition" methodology="Template Matching" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\JoggingActionTemplate.bin</value>
+   </constant>
+   <constant name="walkActionTemplatePath" type="System.String" description="walkActionTemplate ModelPath" module="ActionRecognition" methodology="Template Matching" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\WalkingActionTemplate.bin</value>
+   </constant>
+   <constant name="walkHistogram" type="System.String" description="walkHistogram ModelPath" module="ActionRecognition" methodology="Template Matching" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\WalkingActionTemplate.bin</value>
+   </constant>
+   <constant name="runHistogram" type="System.String" description="runHistogram ModelPath" module="ActionRecognition" methodology="Template Matching" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\RunningActionTemplate.bin</value>
+   </constant>
+   <constant name="joggHistogram" type="System.String" description="joggHistogram ModelPath" module="ActionRecognition" methodology="Template Matching" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\JoggingActionTemplate.bin</value>
+   </constant>
+   <constant name="WalkingPose" type="System.String" description="WalkingPose Model Path" module="ActionRecognition" methodology="Template Matching" addedby="Humza">
+      <value framework="default">..\\..\\..\\..\\libs\\models\\ActionRecognition_Models\\walkingModel.bin</value>
+   </constant>
+   <constant name="RunningPose" type="System.String" description="RunningPose ModelPath" module="ActionRecognition" methodology="Template Matching" addedby="Humza">
+      <value framework="default">..\\..\\..\\..\\libs\\models\\ActionRecognition_Models\\RunningPose.bin</value>
+   </constant>
+   <constant name="JoggingPose" type="System.String" description="JoggingPose ModelPath" module="ActionRecognition" methodology="Template Matching" addedby="Humza">
+      <value framework="default">..\\..\\..\\..\\libs\\models\\ActionRecognition_Models\\JoggingPose.bin</value>
+   </constant>
+   <constant name="seqOfKeyPoseModel" type="System.String" description="seqOfKeyPoseModel Path" module="ActionRecognition" methodology="Sequence of Key Posses" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\SeqOfKeyPosesModels\keyPoseModel.bin</value>
+   </constant>
+   <constant name="xmlDocPath" type="System.String" description="xmlDocPath" module="ActionRecognition" methodology="Sequence of Key Posses" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\SeqOfKeyPosesModels\xmlDoc.xml</value>
+   </constant>
+   <constant name="joggAction" type="System.String" description="joggAction Model Path" module="ActionRecognition" methodology="Sequence of Key Posses" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\SeqOfKeyPosesModels\joggActionModel.bin</value>
+   </constant>
+   <constant name="walkAction" type="System.String" description="walkAction Model Path" module="ActionRecognition" methodology="Sequence of Key Posses" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\SeqOfKeyPosesModels\walkActionModel.bin</value>
+   </constant>
+   <constant name="runAction" type="System.String" description="runAction Model Path" module="ActionRecognition" methodology="Sequence of Key Posses" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\SeqOfKeyPosesModels\runActionModel.bin</value>
+   </constant>
+   <constant name="sideAction" type="System.String" description="sideAction Model Path" module="ActionRecognition" methodology="Sequence of Key Posses" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\SeqOfKeyPosesModels\sideActionModel.bin</value>
+   </constant>
+   <constant name="skipAction" type="System.String" description="skipAction Model Path" module="ActionRecognition" methodology="Sequence of Key Posses" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\SeqOfKeyPosesModels\skipActionModel.bin</value>
+   </constant>
+   <constant name="jumpAction" type="System.String" description="jumpAction Model Path" module="ActionRecognition" methodology="Sequence of Key Posses" addedby="Humza">
+      <value framework="default">..\..\..\..\libs\models\ActionRecognition_Models\SeqOfKeyPosesModels\jumpActionModel.bin</value>
+   </constant>
+   <constant name="genderDllImportPath" type="System.String" description="dll import path of facial landmarks" module="GenderDetection" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">..\..\..\..\libs\landmarks\ExportedLib.dll</value>
+   </constant>
+   <constant name="FRfaceDetected" type="System.Boolean" description="boolean check to confirm face detected for further face recognition" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">FALSE</value>
+   </constant>
+   <constant name="FRframeCountFront" type="System.Int32" description="frame count variable to count the frames coming from front camera" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">0</value>
+   </constant>
+   <constant name="FRframeCountRear" type="System.Int32" description="frame count variable to count the frames coming from rear camera" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">0</value>
+   </constant>
+   <constant name="FRtrainingPath" type="System.String" description="dataset path of lbph file which contains training parameters for lbph methodology " module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">..\..\..\..\libs\FaceRecognition\Dataset\Trainings\</value>
+   </constant>
+   <constant name="FRdirectoryPath" type="System.String" description="dataset path of images used for training and testing" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">..\..\..\..\libs\FaceRecognition\Dataset\Images\</value>
+   </constant>
+   <constant name="FRcameraSourceFront" type="System.String" description="flag and identifier of camera frame from front camera" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">0</value>
+   </constant>
+   <constant name="FRcameraSourceRear" type="System.String" description="flag and identifier of camera frame from rearcamera" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">1</value>
+   </constant>
+   <constant name="faceCascadesPath" type="System.String" description="frontal face path an for face detection" module="FaceDetection" methodology="shared" addedby="Asad">
+      <value framework="default">..\..\..\..\libs\cascades</value>
+   </constant>
+   <constant name="faceCascade" type="System.String" description="frontal face cascade path and name for face detection" module="FaceDetection" methodology="shared" addedby="Asad">
+      <value framework="default">haarcascade_frontalface_default.xml</value>
+   </constant>
+   <constant name="profileFaceCascade" type="System.String" description="profile face cascade name for face detection" module="FaceDetection" methodology="shared" addedby="Asad">
+      <value framework="default">haarcascade_profileface.xml</value>
+   </constant>
+   <constant name="frontalFace" type="System.String" description="haar cascade name for frontal face" module="FaceDetection" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">haarcascade_frontalface_default.xml</value>
+   </constant>
+   <constant name="bowModelNameEmgu" type="System.String" description="model name and path of Bag of words model " module="GenderDetection" methodology="Hybrid" addedby="Abdulrehman">
+      <value framework="default">..\..\..\..\libs\models\GDR_Models\BOWModelSaveLoad.xml</value>
+   </constant>
+   <constant name="bowModelNameSVM" type="System.String" description="SVM trained model to be saved in BOW based methodology" module="GenderDetection" methodology="Hybrid" addedby="Abdulrehman">
+      <value framework="default">..\..\..\..\libs\models\GDR_Models\BOWSVMLoad.xml</value>
+   </constant>
+  <constant name="gunbowModelName" type="System.String" description="SVM trained model to be saved in BOW based Gun detection" module="GunDetection" methodology="SURF" addedby="Abdulrehman">
+      <value framework="default">..\..\..\..\libs\models\Gun_Models\GunBOWSVMLoad.model</value>
+   </constant>
+  <constant name="gunbowModelNameEmgu" type="System.String" description="model name and path of Bag of words model for gun detection " module="GunDetection" methodology="SURF" addedby="Abdulrehman">
+      <value framework="default">..\..\..\..\libs\models\GDR_Models\GunBOWModelSaveLoad.xml</value>
+   </constant>
+  <constant name="gunArffFile" type="System.String" description="Path for arff file being created for gun detection" module="ActionRecognition" methodology="hybrid" addedby="Aiman">
+    <value framework="default">..\..\..\..\libs\models\gunArffFile.arff</value>
+  </constant>
+   <constant name="FRImageHeight" type="System.Int32" description="image height to be set after resizing" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">320</value>
+   </constant>
+   <constant name="FRImageWidth" type="System.Int32" description="image widthto be set after resizing" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">320</value>
+   </constant>
+   <constant name="FRdownScale" type="System.Double" description="down scale of an image" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">0.4</value>
+   </constant>
+   <constant name="serverNameForCrystalReports" type="System.String" description="server name of amazon to be connected for crystl report generation" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">aynulhassan.czwew4nughz4.us-east-1.rds.amazonaws.com1433</value>
+   </constant>
+   <constant name="databaseNameForCrystalReports" type="System.String" description="database name of amazon server to be connected for crystl report generation" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">facedb</value>
+   </constant>
+   <constant name="userNameForCrystalReports" type="System.String" description="User name of amazon server to be connected for crystl report generation" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">aynulhassan</value>
+   </constant>
+   <constant name="passwordForCrystalReports" type="System.String" description="password of amazon server to be connected for crystl report generation" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">12345678</value>
+   </constant>
+   <constant name="FRconnectionString" type="System.String" description="connection details of amazon server" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">Data Source=111.68.102.4;Initial Catalog=facedb;Persist Security Info=True;User ID=cvml;Password=cvml</value>
+   </constant>
+   <constant name="FRtryUseCuda" type="System.Boolean" description="CUDA enable/disbale for Face recognition" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">FALSE</value>
+   </constant>
+   <constant name="FRloopCount" type="System.Int32" description="main loop condition variable in FR" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">6</value>
+   </constant>
+   <constant name="FRskipFrame" type="System.Int32" description="frames to be considered after this variable count" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">5</value>
+   </constant>
+   <constant name="FRvalidateFace" type="System.Boolean" description="validation of face after rectangle obtained from the cascade" module="FaceRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">FALSE</value>
+   </constant>
+   <constant name="FReigenNumComponents" type="System.Int32" description="" module="FaceRecognition" methodology="Eigen based" addedby="Abdulrehman">
+      <value framework="default">80</value>
+   </constant>
+   <constant name="FReigenThreashold" type="System.Double" description="" module="FaceRecognition" methodology="Eigen based" addedby="Abdulrehman">
+      <value framework="default">1000000</value>
+   </constant>
+   <constant name="FRfisherNumComponents" type="System.Int32" description="" module="FaceRecognition" methodology="Fisher faces" addedby="Abdulrehman">
+      <value framework="default">0</value>
+   </constant>
+   <constant name="FRfisherThreashold" type="System.Double" description="" module="FaceRecognition" methodology="Fisher faces" addedby="Abdulrehman">
+      <value framework="default">2000000</value>
+   </constant>
+   <constant name="FRLBPHRadius" type="System.Int32" description="" module="FaceRecognition" methodology="LBPH based" addedby="Abdulrehman">
+      <value framework="default">1</value>
+   </constant>
+   <constant name="FRLBPHNeighbour" type="System.Int32" description="" module="FaceRecognition" methodology="LBPH based" addedby="Abdulrehman">
+      <value framework="default">8</value>
+   </constant>
+   <constant name="FRLBPHGridX" type="System.Int32" description="" module="FaceRecognition" methodology="LBPH based" addedby="Abdulrehman">
+      <value framework="default">8</value>
+   </constant>
+   <constant name="FRLBPHGridY" type="System.Int32" description="" module="FaceRecognition" methodology="LBPH based" addedby="Abdulrehman">
+      <value framework="default">8</value>
+   </constant>
+   <constant name="FRLBPHThreashold" type="System.Double" description="" module="FaceRecognition" methodology="LBPH based" addedby="Abdulrehman">
+      <value framework="default">65</value>
+   </constant>
+   <constant name="surfBowPathSave" type="System.String" description="model name and path of Bag of words model in SR" module="SceneRecognition" methodology="Bag of Words based" addedby="Abdulrehman">
+      <value framework="default">..\\..\\..\\..\\libs\\models\\SceneRecognition_Models\\SceneRecognitionHybridModel.xml</value>
+   </constant>
+   <constant name="svmPathSave" type="System.String" description="SVM trained model to be saved in BOW based methodology of SR" module="SceneRecognition" methodology="Bag of Words based" addedby="Abdulrehman">
+      <value framework="default">..\\..\\..\\..\\libs\\models\\SceneRecognition_Models\\SceneRecognitionSVMModel.xml</value>
+   </constant>
+   <constant name="SceneRecognitionDatasetPath" type="System.String" description="training dataset path containing images" module="SceneRecognition" methodology="" addedby="Abdulrehman">
+      <value framework="default">D:\Datasets\Scene Datasets\Training6\</value>
+   </constant>
+   <constant name="SceneRecognitionTestPath" type="System.String" description="Testing dataset path containing images" module="SceneRecognition" methodology="" addedby="Abdulrehman">
+      <value framework="default">D:\Datasets\Scene Datasets\Test6\</value>
+   </constant>
+   <constant name="SceneRecognitionHueBinCount" type="System.Int32" description="bin count for histogram for image hue layer" module="SceneRecognition" methodology="" addedby="Abdulrehman">
+      <value framework="default">36</value>
+   </constant>
+   <constant name="SceneRecognitionSaturationBinCount" type="System.Int32" description="bin count for histogram for image saturation layer" module="SceneRecognition" methodology="" addedby="Abdulrehman">
+      <value framework="default">32</value>
+   </constant>
+   <constant name="SceneRecognitionKnnClassifier" type="System.Int32" description="KNN classifier k value for nearest neighbor" module="SceneRecognition" methodology="" addedby="Abdulrehman">
+      <value framework="default">10</value>
+   </constant>
+   <constant name="SceneRecognitionKNNSavePath" type="System.String" description="KNN trained model to be saved in SR" module="SceneRecognition" methodology="" addedby="Abdulrehman">
+      <value framework="default">..\\..\\..\\..\\libs\\models\\SceneRecognition_Models\\knnClassifierModel.xml</value>
+   </constant>
+   <constant name="noseFiducialPoint" type="System.Int32" description="nose point location array index in facial landmarks array" module="GenderRecognition" methodology="Distance based" addedby="Abdulrehman">
+      <value framework="default">33</value>
+   </constant>
+   <constant name="leftEyeFiducialPoint1" type="System.Int32" description="left eye point no1 location array index in facial landmarks array" module="GenderRecognition" methodology="Distance based" addedby="Abdulrehman">
+      <value framework="default">36</value>
+   </constant>
+   <constant name="leftEyeFiducialPoint2" type="System.Int32" description="left eye point 2 location array index in facial landmarks array" module="GenderRecognition" methodology="Distance based" addedby="Abdulrehman">
+      <value framework="default">39</value>
+   </constant>
+   <constant name="rightEyeFiducialPoint1" type="System.Int32" description="right eye point 1 location array index in facial landmarks array" module="GenderRecognition" methodology="Distance based" addedby="Abdulrehman">
+      <value framework="default">42</value>
+   </constant>
+   <constant name="rightEyeFiducialPoint2" type="System.Int32" description="right eye point 2 location array index in facial landmarks array" module="GenderRecognition" methodology="Distance based" addedby="Abdulrehman">
+      <value framework="default">45</value>
+   </constant>
+   <constant name="mouthFiducialPoint" type="System.Int32" description="mouth point location array index in facial landmarks array" module="GenderRecognition" methodology="Distance based" addedby="Abdulrehman">
+      <value framework="default">66</value>
+   </constant>
+   <constant name="GDRmlpModelName" type="System.String" description="Gender MLP trained classifier model path in distance based methodology" module="GenderRecognition" methodology="Distance based" addedby="Abdulrehman">
+      <value framework="default">genderMLPModel</value>
+   </constant>
+   <constant name="GDRmlp2ModelName" type="System.String" description="Gender MLP trained classifier model path in hair based methodology" module="GenderRecognition" methodology="Hair based" addedby="Abdulrehman">
+      <value framework="default">genderNBModel</value>
+   </constant>
+   <constant name="genderResizeHeight" type="System.Int32" description="Images height to be set after resizing" module="GenderRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">480</value>
+   </constant>
+   <constant name="genderResizeWidth" type="System.Int32" description="Images widthto be set after resizing" module="GenderRecognition" methodology="shared" addedby="Abdulrehman">
+      <value framework="default">640</value>
+   </constant>
+   <constant name="GDRCustomMlpModelName" type="System.String" description="Gender MLP trained classifier model path in custom methadology" module="GenderRecognition" methodology="hybrid" addedby="Abdulrehman">
+      <value framework="default">genderMLPModelCustom</value>
+   </constant>
+   <constant name="genderSVMModel" type="System.String" description="Gender SVM trained classifier model path in custom methadology" module="GenderRecognition" methodology="hybrid" addedby="Abdulrehman">
+      <value framework="default">genderSVMModel.xml</value>
+   </constant>
+   <constant name="abc" type="System.String" description="testing constant to load Bag of words model" module="GenderRecognition" methodology="hybrid" addedby="Abdulrehman">
+      <value framework="default">BOWModelSaveLoad.xml</value>
+   </constant>
+   <constant name="KConstant" type="System.Int32" description="Kconstant for the clustering size of Bago of words model" module="GenderRecognition" methodology="hybrid" addedby="Abdulrehman">
+      <value framework="default">1000</value>
+   </constant>
+   <constant name="chinFiducialPoint" type="System.Int32" description="chin point location array index in facial landmarks array" module="GenderRecognition" methodology="Distance based" addedby="Abdulrehman">
+      <value framework="default">8</value>
+   </constant>
+ <constant name="noOfFeatureCNN" type="System.Int32" description="no of features extracted by CNN" module="SceneRecognition" methodology="CNN Feature Extraction with SVM" addedby="Saira">
+      <value framework="default">4096</value>
+   </constant>
+  <constant name="adbiosvmemgumodel" type="System.String" description="Bio Inspired SVM model" module="AgeDetection" methodology="Bio Inspired" addedby="Asad">
+    <value framework="default">..\\..\\..\\libs\\models\\ageSVMBioEmgu.xml</value>
+  </constant>
+  <constant name="cascadepath" type="System.String" description="Root path to cascades" module="Shared" methodology="" addedby="Samyan">
+    <value framework="default">cascades\</value>
+  </constant>
+   <constant name="hybridCSVFilePath" type="System.String" description="Path for CSV file being created for hybrid methodolgy" module="ActionRecognition" methodology="hybrid" addedby="Aiman">
+      <value framework="default">..\..\..\..\libs\models\FusionCustomized.csv</value>
+   </constant>
+   <constant name="activityHybridArffFile" type="System.String" description="Path for arff file being created for hybrid methodolgy" module="ActionRecognition" methodology="hybrid" addedby="Aiman">
+      <value framework="default">..\..\..\..\libs\models\FusionCustomized.arff</value>
+   </constant>
+   <constant name="hybridCSVModelPath" type="System.String" description="Path for CSV model being created for hybrid methodolgy" module="ActionRecognition" methodology="hybrid" addedby="Aiman">
+      <value framework="default">..\..\..\..\libs\models\ADR_Models\FusionCustomized.model</value>
+   </constant>
+  <constant name="backgroundPath" type="System.String" description="Path for Background" module="ActionRecognition" methodology="hybrid" addedby="Aiman">
+      <value framework="default">..\..\..\..\libs\models\BackgroundModels\backgrounds\Background.jpg</value>
+   </constant>
+   <constant name="SRdiPOS" type="System.String" description="Path for training" module="SceneRecognition" methodology="DCT based approach" addedby="Saira">
+      <value framework="default">D:\SceneDataset\Training\Indoor\dining_room</value>
+   </constant>
+   <constant name="SRdiNEG" type="System.String" description="Path for training" module="SceneRecognition" methodology="DCT based approach" addedby="Saira">
+      <value framework="default">D:\SceneDataset\Training\Outdoor\coast</value>
+   </constant>
+  <constant name="SRdiCNNSVM" type="System.String" description="Path for training" module="SceneRecognition" methodology="CNN Feature Extraction with SVM" addedby="Saira">
+      <value framework="default">D:\SceneDataset\3500ImagesDataset\</value>
+   </constant>
+  <constant name="weightBR" type="System.Int32" description="Weight of BR" module="SceneRecognition" methodology="ECOH descriptors based methodology" addedby="Saira">
+    <value framework="default">0.67</value>
+  </constant>
+  <constant name="weightCR" type="System.Int32" description="Weight of BR" module="SceneRecognition" methodology="ECOH descriptors based methodology" addedby="Saira">
+    <value framework="default">0.33</value>
+  </constant>
+  <constant name="lowlevelFeatures" type="System.String" description="Path for stored features" module="SceneRecognition" methodology="Low level features based methodology " addedby="Saira">
+    <value framework="default">..\..\..\..\ASSVS.FAS.SR\Low Level Feature Based Approach\FeaturesLowLevel\FF</value>
+  </constant>
+  <constant name="nlgLibsPath" type="System.String" description="Path for NLG files" module="NLG" methodology="Shared" addedby="Summra">
+    <value framework="default">..\..\..\..\libs\NLGlibs</value>
+  </constant>
+
+<constant name="pathScene" type="System.String" description="Path to Scene Indexer file" module="VSR" methodology="MixedMethodologiesbasedIR" addedby="Humza">
+    <value framework="default">..\..\..\..\libs\models\IR_Indexer\Scene.xml</value>
+  </constant>
+<constant name="pathFaceinScene" type="System.String" description="Path to face in scene Indexer file" module="VSR" methodology="MixedMethodologiesbasedIR" addedby="Humza">
+    <value framework="default">..\..\..\..\libs\models\IR_Indexer\FaceinScene.xml</value>
+  </constant>
+  <constant name="pathHumansinScene" type="System.String" description="Path to humans in scene Indexer file" module="VSR" methodology="MixedMethodologiesbasedIR" addedby="Humza">
+    <value framework="default">..\..\..\..\libs\models\IR_Indexer\HumansinScene.xml</value>
+  </constant>
+<constant name="pathMixedImplementationinScene" type="System.String" description="Path to Mixed Implementation in scene Indexer file" module="VSR" methodology="MixedMethodologiesbasedIR" addedby="Humza">
+    <value framework="default">..\..\..\..\libs\models\IR_Indexer\MixedImplementationinScene.xml</value>
+  </constant>
+  <constant name="pathAgeIndexer" type="System.String" description="Path to Mixed Implementation in scene Indexer file" module="VSR" methodology="MixedMethodologiesbasedIR" addedby="Humza">
+    <value framework="default">..\..\..\..\libs\models\IR_Indexer\AgeIndexer.xml</value>
+  </constant>
+  <constant name="pathFRIndexer" type="System.String" description="Path to Mixed Implementation in scene Indexer file" module="VSR" methodology="MixedMethodologiesbasedIR" addedby="Humza">
+    <value framework="default">..\..\..\..\libs\models\IR_Indexer\FRIndexer.xml</value>
+  </constant>
+  <constant name="pathGenderIndexer" type="System.String" description="Path to Mixed Implementation in scene Indexer file" module="VSR" methodology="MixedMethodologiesbasedIR" addedby="Humza">
+  <value framework="default">..\..\..\..\libs\models\IR_Indexer\GenderIndexer.xml</value>    
+  </constant>
+  <constant name="pathEmotionIndexer" type="System.String" description="Path to Mixed Implementation in scene Indexer file" module="VSR" methodology="MixedMethodologiesbasedIR" addedby="Humza">
+    <value framework="default">..\..\..\..\libs\models\IR_Indexer\EmotionIndexer.xml</value>
+  </constant>  
+  <constant name="pathObjectIndexer" type="System.String" description="Path to Mixed Implementation in scene Indexer file" module="VSR" methodology="MixedMethodologiesbasedIR" addedby="Humza">
+    <value framework="default">..\..\..\..\libs\models\IR_Indexer\ObjectIndexer.xml</value>
+  </constant>
+  <constant name="odrobjectnames" type="System.String" description="Path for ODR object names" module="ObjectDectection" methodology="Darknet" addedby="Asad">
+    <value framework="default">..\..\..\..\..\..\libs\ODR\coco.names</value>
+  </constant>
+  <constant name="odrconfigfile" type="System.String" description="Path for config File for ODR" module="ObjectDectection" methodology="Darknet" addedby="Asad">
+    <value framework="default">..\..\..\..\libs\ODR\yolo.cfg</value>
+  </constant><constant name="odrweightsfile" type="System.String" description="Path for weights File for ODR" module="ObjectDectection" methodology="Darknet" addedby="Asad">
+    <value framework="default">..\..\..\..\libs\ODR\yolo.weights</value>
+  </constant>
+  <constant name="nlgpostagger" type="System.String" description="Path for POS tager model" module="NLG"  addedby="ahmed">
+    <value framework="default">..\..\..\..\libs\NLGlibs\Stanford.NLP.POSTagger.3.7.0.1\models\wsj-0-18-bidirectional-nodistsim.tagger</value>
+  </constant>
+  <constant name="skinDetector" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\libs\skinDetector\skinDetector.dll</value>
+  </constant>
+<constant name="glassesDetectorModel" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\GlassesDetection\glassesDetection.model</value>
+  </constant>
+  <constant name="glassesDetector" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\GlassesDetection\glassesDetection.arff</value>
+  </constant>
+  <constant name="glassesDetector" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\GlassesDetection\glassesDetection.arff</value>
+  </constant>
+  <constant name="glassesDetectorModel" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\GlassesDetection\glassesDetection.model</value>
+  </constant>
+  <constant name="mustacheImage1" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\OcculisionTemplate\mustache.png</value>
+  </constant>
+  <constant name="mustacheImage2" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\OcculisionTemplate\mustache.png</value>
+  </constant>
+  <constant name="mustacheImage3" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\OcculisionTemplate\mustache.png</value>
+  </constant>
+  <constant name="moleTemplatePath" type="System.String" description="path for template of mole used matching" module="Face Detection"  addedby="Abdullah">
+    <value framework="default">..\..\..\..\libs\mole.png</value>
+  </constant>
+  <constant name="ethnicityfeatureModelPath" type="System.String" description="path for model of ethnicity detection" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\Ethnicity\ethnicityFeatureFileStatisticalYCBCr.model</value>
+  </constant>
+  <constant name="skinKnowledgeFile" type="System.String" description="knowledge File of skin detection" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\skin\image_knowledge.dat</value>
+  </constant>
+  <constant name="glassesImage1" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\OcculisionTemplate\Glasses.jpg</value>
+  </constant>
+  <constant name="glassesImage2" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\OcculisionTemplate\Glasses.jpg</value>
+  </constant>
+  <constant name="glassesImage3" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\OcculisionTemplate\Glasses.jpg</value>
+  </constant>
+  <constant name="beardImage1" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\OcculisionTemplate\beard.png</value>
+  </constant>
+  <constant name="beardImage2" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\OcculisionTemplate\beard.png</value>
+  </constant>
+  <constant name="beardImage3" type="System.String" description="Path for skin detector dll" module="Face Detection"  addedby="Abdulrehman">
+    <value framework="default">..\..\..\..\libs\OcculisionTemplate\beard.png</value>
+  </constant>
+  <constant name="HumanModel" type="System.String" description="Path for Human detection model" module="Human Detection and Recognition"  addedby="Shahid Bhai">
+    <value framework="default">..\..\..\..\libs\models\HDR_Models\HOGModel.xml</value>
+  </constant>
+ <constant name="hand" type="System.String" description="frontal face cascade path and name for face detection" module="FaceDetection" methodology="shared" addedby="Asad">
+      <value framework="default">closed_frontal_palm.xml</value>
+   </constant>
+  <constant name="hand2" type="System.String" description="frontal face cascade path and name for face detection" module="FaceDetection" methodology="shared" addedby="Asad">
+    <value framework="default">aGest.xml</value>
+  </constant>
+  <constant name="hand3" type="System.String" description="frontal face cascade path and name for face detection" module="FaceDetection" methodology="shared" addedby="Asad">
+    <value framework="default">hand.xml</value>
+  </constant>
+
+    <constant name="HumanSURFModel" type="System.String" description="Path for Human detection model SURF" module="Human Detection and Recognition"  addedby="Shahid Bhai">
+      <value framework="default">..\..\..\..\libs\models\HDR_Models\BagOfWordsModel.xml</value>
+  </constant>
+</constants> 
