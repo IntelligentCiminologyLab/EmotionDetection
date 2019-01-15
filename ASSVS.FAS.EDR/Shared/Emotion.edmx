@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="emotiondbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'emotiondb.dbo.Emotion_distances' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Emotion_distances">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="LEB_CPLE" />
+            <PropertyRef Name="REB_CPRE" />
+            <PropertyRef Name="OPEN_LE" />
+            <PropertyRef Name="OPEN_RE" />
+            <PropertyRef Name="OPEN_MO" />
+            <PropertyRef Name="EXP_MO" />
+            <PropertyRef Name="CPLE_CPMO" />
+            <PropertyRef Name="CPRE_CPMO" />
+            <PropertyRef Name="LPLE_CPMO" />
+            <PropertyRef Name="RPRE_CPMO" />
+            <PropertyRef Name="Label" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LEB_CPLE" Type="float" Nullable="false" />
+          <Property Name="REB_CPRE" Type="float" Nullable="false" />
+          <Property Name="OPEN_LE" Type="float" Nullable="false" />
+          <Property Name="OPEN_RE" Type="float" Nullable="false" />
+          <Property Name="OPEN_MO" Type="float" Nullable="false" />
+          <Property Name="EXP_MO" Type="float" Nullable="false" />
+          <Property Name="CPLE_CPMO" Type="float" Nullable="false" />
+          <Property Name="CPRE_CPMO" Type="float" Nullable="false" />
+          <Property Name="LPLE_CPMO" Type="float" Nullable="false" />
+          <Property Name="RPRE_CPMO" Type="float" Nullable="false" />
+          <Property Name="Label" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Emotion_Training_Data">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Emotion_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Emotion_Value" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Emotion_Training_distances">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LEB1_CPLE1" Type="float" Nullable="false" />
+          <Property Name="LEB2_CPLE2" Type="float" Nullable="false" />
+          <Property Name="REB1_CPRE1" Type="float" Nullable="false" />
+          <Property Name="REB2_CPRE2" Type="float" Nullable="false" />
+          <Property Name="OPEN_LE1" Type="float" Nullable="false" />
+          <Property Name="OPEN_LE2" Type="float" Nullable="false" />
+          <Property Name="OPEN_RE1" Type="float" Nullable="false" />
+          <Property Name="OPEN_RE2" Type="float" Nullable="false" />
+          <Property Name="EXP_MO" Type="float" Nullable="false" />
+          <Property Name="OPEN_MO1" Type="float" Nullable="false" />
+          <Property Name="OPEN_MO2" Type="float" Nullable="false" />
+          <Property Name="OPEN_MO3" Type="float" Nullable="false" />
+          <Property Name="Label" Type="nvarchar" MaxLength="50" />
+          <Property Name="NS_LPLIP" Type="float" Nullable="false" />
+          <Property Name="NS_RPLIP" Type="float" Nullable="false" />
+          <Property Name="betweenEyesWrinkles" Type="float" Nullable="false" />
+          <Property Name="noseWrinkles" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Emotion_training_distances_wrinkle_free">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LEB1_CPLE1" Type="float" Nullable="false" />
+          <Property Name="LEB2_CPLE2" Type="float" Nullable="false" />
+          <Property Name="REB1_CPRE1" Type="float" Nullable="false" />
+          <Property Name="REB2_CPRE2" Type="float" Nullable="false" />
+          <Property Name="OPEN_LE1" Type="float" Nullable="false" />
+          <Property Name="OPEN_LE2" Type="float" Nullable="false" />
+          <Property Name="OPEN_RE1" Type="float" Nullable="false" />
+          <Property Name="OPEN_RE2" Type="float" Nullable="false" />
+          <Property Name="EXP_MO" Type="float" Nullable="false" />
+          <Property Name="OPEN_MO1" Type="float" Nullable="false" />
+          <Property Name="OPEN_MO2" Type="float" Nullable="false" />
+          <Property Name="OPEN_MO3" Type="float" Nullable="false" />
+          <Property Name="Label" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityContainer Name="emotiondbModelStoreContainer">
+          <EntitySet Name="Emotion_Training_Data" EntityType="Self.Emotion_Training_Data" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Emotion_Training_distances" EntityType="Self.Emotion_Training_distances" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Emotion_training_distances_wrinkle_free" EntityType="Self.Emotion_training_distances_wrinkle_free" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Emotion_distances" EntityType="Self.Emotion_distances" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Emotion_distances].[id] AS [id], 
+    [Emotion_distances].[LEB_CPLE] AS [LEB_CPLE], 
+    [Emotion_distances].[REB_CPRE] AS [REB_CPRE], 
+    [Emotion_distances].[OPEN_LE] AS [OPEN_LE], 
+    [Emotion_distances].[OPEN_RE] AS [OPEN_RE], 
+    [Emotion_distances].[OPEN_MO] AS [OPEN_MO], 
+    [Emotion_distances].[EXP_MO] AS [EXP_MO], 
+    [Emotion_distances].[CPLE_CPMO] AS [CPLE_CPMO], 
+    [Emotion_distances].[CPRE_CPMO] AS [CPRE_CPMO], 
+    [Emotion_distances].[LPLE_CPMO] AS [LPLE_CPMO], 
+    [Emotion_distances].[RPRE_CPMO] AS [RPRE_CPMO], 
+    [Emotion_distances].[Label] AS [Label]
+    FROM [dbo].[Emotion_distances] AS [Emotion_distances]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="emotiondbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Emotion_Training_Data">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Emotion_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Emotion_Value" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Emotion_Training_distances">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LEB1_CPLE1" Type="Double" Nullable="false" />
+          <Property Name="LEB2_CPLE2" Type="Double" Nullable="false" />
+          <Property Name="REB1_CPRE1" Type="Double" Nullable="false" />
+          <Property Name="REB2_CPRE2" Type="Double" Nullable="false" />
+          <Property Name="OPEN_LE1" Type="Double" Nullable="false" />
+          <Property Name="OPEN_LE2" Type="Double" Nullable="false" />
+          <Property Name="OPEN_RE1" Type="Double" Nullable="false" />
+          <Property Name="OPEN_RE2" Type="Double" Nullable="false" />
+          <Property Name="EXP_MO" Type="Double" Nullable="false" />
+          <Property Name="OPEN_MO1" Type="Double" Nullable="false" />
+          <Property Name="OPEN_MO2" Type="Double" Nullable="false" />
+          <Property Name="OPEN_MO3" Type="Double" Nullable="false" />
+          <Property Name="Label" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NS_LPLIP" Type="Double" Nullable="false" />
+          <Property Name="NS_RPLIP" Type="Double" Nullable="false" />
+          <Property Name="betweenEyesWrinkles" Type="Double" Nullable="false" />
+          <Property Name="noseWrinkles" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Emotion_training_distances_wrinkle_free">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LEB1_CPLE1" Type="Double" Nullable="false" />
+          <Property Name="LEB2_CPLE2" Type="Double" Nullable="false" />
+          <Property Name="REB1_CPRE1" Type="Double" Nullable="false" />
+          <Property Name="REB2_CPRE2" Type="Double" Nullable="false" />
+          <Property Name="OPEN_LE1" Type="Double" Nullable="false" />
+          <Property Name="OPEN_LE2" Type="Double" Nullable="false" />
+          <Property Name="OPEN_RE1" Type="Double" Nullable="false" />
+          <Property Name="OPEN_RE2" Type="Double" Nullable="false" />
+          <Property Name="EXP_MO" Type="Double" Nullable="false" />
+          <Property Name="OPEN_MO1" Type="Double" Nullable="false" />
+          <Property Name="OPEN_MO2" Type="Double" Nullable="false" />
+          <Property Name="OPEN_MO3" Type="Double" Nullable="false" />
+          <Property Name="Label" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Emotion_distances">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="LEB_CPLE" />
+            <PropertyRef Name="REB_CPRE" />
+            <PropertyRef Name="OPEN_LE" />
+            <PropertyRef Name="OPEN_RE" />
+            <PropertyRef Name="OPEN_MO" />
+            <PropertyRef Name="EXP_MO" />
+            <PropertyRef Name="CPLE_CPMO" />
+            <PropertyRef Name="CPRE_CPMO" />
+            <PropertyRef Name="LPLE_CPMO" />
+            <PropertyRef Name="RPRE_CPMO" />
+            <PropertyRef Name="Label" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LEB_CPLE" Type="Double" Nullable="false" />
+          <Property Name="REB_CPRE" Type="Double" Nullable="false" />
+          <Property Name="OPEN_LE" Type="Double" Nullable="false" />
+          <Property Name="OPEN_RE" Type="Double" Nullable="false" />
+          <Property Name="OPEN_MO" Type="Double" Nullable="false" />
+          <Property Name="EXP_MO" Type="Double" Nullable="false" />
+          <Property Name="CPLE_CPMO" Type="Double" Nullable="false" />
+          <Property Name="CPRE_CPMO" Type="Double" Nullable="false" />
+          <Property Name="LPLE_CPMO" Type="Double" Nullable="false" />
+          <Property Name="RPRE_CPMO" Type="Double" Nullable="false" />
+          <Property Name="Label" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="emotiondbEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Emotion_Training_Data" EntityType="Self.Emotion_Training_Data" />
+          <EntitySet Name="Emotion_Training_distances" EntityType="Self.Emotion_Training_distances" />
+          <EntitySet Name="Emotion_training_distances_wrinkle_free" EntityType="Self.Emotion_training_distances_wrinkle_free" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Emotion_distances" EntityType="Self.Emotion_distances" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="emotiondbModelStoreContainer" CdmEntityContainer="emotiondbEntities1">
+          <EntitySetMapping Name="Emotion_Training_Data">
+            <EntityTypeMapping TypeName="emotiondbModel.Emotion_Training_Data">
+              <MappingFragment StoreEntitySet="Emotion_Training_Data">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Emotion_Name" ColumnName="Emotion_Name" />
+                <ScalarProperty Name="Emotion_Value" ColumnName="Emotion_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Emotion_Training_distances">
+            <EntityTypeMapping TypeName="emotiondbModel.Emotion_Training_distances">
+              <MappingFragment StoreEntitySet="Emotion_Training_distances">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="LEB1_CPLE1" ColumnName="LEB1_CPLE1" />
+                <ScalarProperty Name="LEB2_CPLE2" ColumnName="LEB2_CPLE2" />
+                <ScalarProperty Name="REB1_CPRE1" ColumnName="REB1_CPRE1" />
+                <ScalarProperty Name="REB2_CPRE2" ColumnName="REB2_CPRE2" />
+                <ScalarProperty Name="OPEN_LE1" ColumnName="OPEN_LE1" />
+                <ScalarProperty Name="OPEN_LE2" ColumnName="OPEN_LE2" />
+                <ScalarProperty Name="OPEN_RE1" ColumnName="OPEN_RE1" />
+                <ScalarProperty Name="OPEN_RE2" ColumnName="OPEN_RE2" />
+                <ScalarProperty Name="EXP_MO" ColumnName="EXP_MO" />
+                <ScalarProperty Name="OPEN_MO1" ColumnName="OPEN_MO1" />
+                <ScalarProperty Name="OPEN_MO2" ColumnName="OPEN_MO2" />
+                <ScalarProperty Name="OPEN_MO3" ColumnName="OPEN_MO3" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="NS_LPLIP" ColumnName="NS_LPLIP" />
+                <ScalarProperty Name="NS_RPLIP" ColumnName="NS_RPLIP" />
+                <ScalarProperty Name="betweenEyesWrinkles" ColumnName="betweenEyesWrinkles" />
+                <ScalarProperty Name="noseWrinkles" ColumnName="noseWrinkles" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Emotion_training_distances_wrinkle_free">
+            <EntityTypeMapping TypeName="emotiondbModel.Emotion_training_distances_wrinkle_free">
+              <MappingFragment StoreEntitySet="Emotion_training_distances_wrinkle_free">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="LEB1_CPLE1" ColumnName="LEB1_CPLE1" />
+                <ScalarProperty Name="LEB2_CPLE2" ColumnName="LEB2_CPLE2" />
+                <ScalarProperty Name="REB1_CPRE1" ColumnName="REB1_CPRE1" />
+                <ScalarProperty Name="REB2_CPRE2" ColumnName="REB2_CPRE2" />
+                <ScalarProperty Name="OPEN_LE1" ColumnName="OPEN_LE1" />
+                <ScalarProperty Name="OPEN_LE2" ColumnName="OPEN_LE2" />
+                <ScalarProperty Name="OPEN_RE1" ColumnName="OPEN_RE1" />
+                <ScalarProperty Name="OPEN_RE2" ColumnName="OPEN_RE2" />
+                <ScalarProperty Name="EXP_MO" ColumnName="EXP_MO" />
+                <ScalarProperty Name="OPEN_MO1" ColumnName="OPEN_MO1" />
+                <ScalarProperty Name="OPEN_MO2" ColumnName="OPEN_MO2" />
+                <ScalarProperty Name="OPEN_MO3" ColumnName="OPEN_MO3" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="emotiondbModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Emotion_distances">
+            <EntityTypeMapping TypeName="emotiondbModel.Emotion_distances">
+              <MappingFragment StoreEntitySet="Emotion_distances">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="LEB_CPLE" ColumnName="LEB_CPLE" />
+                <ScalarProperty Name="REB_CPRE" ColumnName="REB_CPRE" />
+                <ScalarProperty Name="OPEN_LE" ColumnName="OPEN_LE" />
+                <ScalarProperty Name="OPEN_RE" ColumnName="OPEN_RE" />
+                <ScalarProperty Name="OPEN_MO" ColumnName="OPEN_MO" />
+                <ScalarProperty Name="EXP_MO" ColumnName="EXP_MO" />
+                <ScalarProperty Name="CPLE_CPMO" ColumnName="CPLE_CPMO" />
+                <ScalarProperty Name="CPRE_CPMO" ColumnName="CPRE_CPMO" />
+                <ScalarProperty Name="LPLE_CPMO" ColumnName="LPLE_CPMO" />
+                <ScalarProperty Name="RPRE_CPMO" ColumnName="RPRE_CPMO" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
